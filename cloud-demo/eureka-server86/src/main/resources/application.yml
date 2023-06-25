@@ -1,0 +1,13 @@
+server:
+  port: 12233 # 服务端口
+spring:
+  application:
+    name: eurekaserver # eureka的服务名称
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url: # eureka的地址信息
+      defaultZone: http://127.0.0.1:12233/eureka
+#  instance:
+#    hostname: eurekaserver10086
